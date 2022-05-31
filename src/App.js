@@ -3,6 +3,7 @@ import { Provider as StyletronProvider } from 'styletron-react';
 import { LightTheme, BaseProvider, styled } from 'baseui';
 import { StatefulInput } from 'baseui/input';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Homepage from './components/homepage';
 const engine = new Styletron();
 const Centered = styled('div', {
@@ -19,6 +20,7 @@ export default function App() {
         <Navbar />
         </Centered>
         <Homepage />
+        <Footer/>
       </BaseProvider>
     </StyletronProvider>
   );
